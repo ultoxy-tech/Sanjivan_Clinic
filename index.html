@@ -337,7 +337,6 @@
                 <li><a href="#about" data-nav="about">About</a></li>
                 <li><a href="#services" data-nav="services">Services</a></li>
                 <li><a href="#doctors" data-nav="doctors">Doctors</a></li>
-                <li><a href="#appointment" data-nav="appointment">Appointment</a></li>
                 <li><a href="#contact" data-nav="contact">Contact</a></li>
                 <li><a href="#book" class="btn-appointment" id="desktopCtaBtn"><i class="fas fa-calendar-check"></i> Book Appointment</a></li>
             </ul>
@@ -646,7 +645,7 @@
 
 
 <!-- Premium Medical Hero Section -->
-<section class="hero-medical">
+<section class="hero-medical" id="home">
   <div class="hero-canvas">
     <canvas id="particleCanvas"></canvas>
   </div>
@@ -1230,9 +1229,7 @@
     }
 
     .float-1 {
-      top: 15%;
-      right: 5%;
-      animation-delay: 0s;
+      display: none; /* Hidden on mobile */
     }
 
     .float-2 {
@@ -1243,7 +1240,7 @@
 
     .float-3 {
       top: 60%;
-      right: 2%;
+      right: 6%;
       animation-delay: 4s;
     }
 
@@ -1601,7 +1598,7 @@
 
 
 <!-- About Us Section -->
-<section class="about-section">
+<section class="about-section" id="about">
   <div class="about-container">
     <!-- Left Column - Text Content -->
     <div class="about-content">
@@ -2718,7 +2715,7 @@
       }
     }
   </style>
-  <section class="services-wrapper">
+  <section class="services-wrapper" id="services">
     <div class="services-container">
       <!-- Section Header -->
       <div class="services-header">
@@ -3398,7 +3395,7 @@
     }
   </style>
 
-    <section class="doctors-luxury">
+    <section class="doctors-luxury" id="doctors">
     <div class="bg-waves">
       <div class="wave-shape"></div>
       <div class="wave-shape-2"></div>
@@ -3658,7 +3655,7 @@
 
 
 <!-- Contact Us Section -->
-<section class="contact-section">
+<section class="contact-section" id="contact">
   <div class="contact-background">
     <svg class="contact-animated-waves" viewBox="0 0 1200 600" preserveAspectRatio="none">
       <defs>
